@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Zumo Fight: Score Board</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="score.js" type="text/javascript"></script>
+        <link href="score.css" rel="stylesheet" type="text/css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+    </head>
+    <body onload="MQTTconnect()">
+        <div id="victoryDance" style="display:none;">
+            <img src = "victory.gif" style="width:100%;" />
+        </div>
+
+        <div id="match-details-curtain">
+            <div id="match-details-container">
+                <div id="title">MATCH STATISTICS</div>
+
+                <div id="teams-container" >
+                    <div class="homecomming-team flexbox-items">
+                        <div class="homecomming-team logo" id="home-team-logo" style="display:none;" >
+                            <img src="zumo1.png" style="height:70px; overflow:hidden;"/>
+                        </div>
+                        <br />
+                        <div class="homecomming-team name" id="homecomming-team-name" ></div>
+                    </div>
+                    <div class="flexbox-items">
+                        <div id="time-of-match"></div>
+                        <div id="date-of-match"></div>
+                        <br />
+                        <div id="vs">
+                            <div class="circle">
+                        </div>
+                        <hr id="vs-line"/>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="away-team flexbox-items">
+                    <div class="away-team logo" id="away-team-logo" style="display:none;">
+                        <img src="zumo2.png" style="height:70px; overflow:hidden;"/>
+                    </div>
+                    <br />
+                    <div class="away-team name" id="away-team-name"></div>
+                </div>
+            </div>
+            <div id="score-container" style="border: green solid 1px;">
+                <div class="homecomming-team score" id="home-team-score"></div>
+                <div class="away-team score" id="away-team-score"></div>
+            </div>
+            <div id="connectionMessage"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:elevation="5dp"
+            android:background="@color/colorWhite"
+            card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+                android:id="@+id/parent"
+                android:padding="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:id="@+id/name"
+                    android:fontFamily="@font/ubuntu"
+                    android:layout_weight="1"
+                    android:text="Zumo1"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/ic_buggies"
+                    android:drawablePadding="5dp"
+                    android:textAlignment="center"
+                    android:layout_width="0dp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_height="wrap_content" />
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/life_anim"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        app:lottie_loop="true"
+                        app:lottie_autoPlay="true" />
+                <TextView
+                        android:id="@+id/life"
+                        android:text="75"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/ubuntu"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

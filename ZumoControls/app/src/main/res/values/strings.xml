@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Zumo Controller</string>
+    <string name="connect_to_zumo">Connect To Zumo</string>
+    <string name="connecting">Connecting...</string>
+    <string name="z_axis">Z Axis</string>
+    <string name="_0">0</string>
+    <string name="y_axis">Y Axis</string>
+    <string name="left_speed">Left Speed</string>
+    <string name="right_speed">Right Speed</string>
+    <string name="current_state">Current State</string>
+    <string name="stop">STOP</string>
+    <string name="start">Start</string>
+    <string name="auto">Auto</string>
+    <string name="status">Status</string>
+</resources>
